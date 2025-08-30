@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="/logo-revou.png" alt="">
+        </div>
+        <nav>
+            <a href="#home-page">Home</a></li>
+            <a href="#about-the-company">Our Profile</a></li>
+            <a href="#HeadQuarter">HeadQuarter</a></li>
+            <a href="#Message-Us">Message Us</a></li>
+        </nav>
+    </header>
+    <main>
+        <section id="home-page">
+            <div class="hero-text">
+                <h1 id="welcomeText">Hi, Welcome To Our Website</h1>
+                <p>Tingkatkan skill, raih karir impian bersama kursus online terbaik di Indonesia..</p>
+            </div>
+            <div class="hero-image">
+                <img src="/photo-banner.png" alt="Hero Image">
+            </div>
+        </section>
+        <section id="about-the-company">
+            <div class="section-title">
+                <h2>About The Company</h2> 
+                <p>Kami adalah platform pendidikan digital yang berdedikasi untuk mencetak talenta-talenta IT terbaik di Indonesia. Revou hadir untuk menjembatani kesenjangan antara pendidikan formal dan kebutuhan industri.
+                Setiap kurikulum kami disusun oleh para praktisi IT dan ahli industri, 
+                memastikan Anda mendapatkan pengetahuan yang paling aktual, praktis, 
+                dan dapat diterapkan langsung di dunia kerja. 
+                Kami percaya pada kekuatan komunitas dan bimbingan personal. Karena itu, 
+                kami menyediakan mentor berpengalaman yang siap mendampingi Anda di setiap langkah, 
+                dari awal hingga Anda berhasil meraih karir impian Anda.</p>
+            </div>
+                <div class="company-values">
+                <div class="visi">
+                    <h3>Our Vision</h3>
+                    <p>Menjadi penyedia pendidikan yang relevan dan terkini untuk karir di industri teknologi Indonesia.</p>
+                </div>
+                <div class="misi">
+                    <h3>Our Mission</h3>
+                    <li>Membekali murid dengan keterampilan digital yang dibutuhkan oleh industri teknologi Indonesia saat ini. </li>
+                    <li>Menjembatani kesenjangan antara kebutuhan industri teknologi dan pasokan talenta teknologi terbaik di Indonesia. </li>
+                    <li>Membantu masyarakat pekerja di Indonesia memulai atau meningkatkan karier mereka di industri teknologi. </li>
+                    <li>Menawarkan pendidikan daring yang fleksibel untuk pengembangan karier di era ekonomi digital. </li>
+                
+                </div>
+            </div>
+        </section>
+        <section id="HeadQuarter">
+            <div class="section-title">
+                <h2>Our HeadQuarter</h2>
+            </div>
+            <div class="HeadQuarter-places">
+                <div class="portfolio-jakarta">
+                    <img src="/gambar-jakarta..jpeg" alt="Project 1">
+                    <h3>Jakarta</h3>
+                </div>
+                <div class="portfolio-bandung">
+                    <img src="/gambar-bandung.jpg" alt="Project 2">
+                    <h3>Bandung</h3>
+                </div>
+                <div class="portfolio-surabaya">
+                    <img src="/gambar-surabaya.jpeg" alt="Project 3">
+                    <h3>Surabaya</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="Message-Us">
+                <div class="section-title">
+                    <h2>Message Us</h2>
+                </div>
+                <div class="Message-Us-form">
+                    <form id="messageForm">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" placeholder="Nama" required>
+
+                    <label for="Date">Tanggal Lahir</label>
+                    <input type="Date" id="Date" name="Date" required>
+
+                    <label for="Gender">Jenis Kelamin</label>
+                    <div class="radio-group">
+                        <input type="radio" id="Laki-Laki" name="Gender" value="Laki-Laki" required>
+                        <label for="Laki-Laki">Laki-Laki</label>
+                        <input type="radio" id="Perempuan" name="Gender" value="Perempuan">
+                        <label for="Perempuan">Perempuan</label>
+                    </div>
+
+                    <label for="message">Pesan</label>
+                    <textarea id="message" rows="5" name="message" placeholder="Pesan" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                    </form>  
+
+                    <div id="displayArea">
+                        <p><strong>currentTime:</strong><span id="currentTime"></span></p>
+                        <p><Strong>Nama:</Strong><span id="displayName"></span></p>
+                        <p><strong>Tanggal Lahir:</strong><span id="displayDate"></span></p>
+                        <p><strong>Jenis Kelamin:</strong><span id="displayGender"></span></p>
+                        <p><strong>Pesan:</strong><span id="displayMessage"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Created by Rizky Ahmad Fahrezi</p>
+        </footer>
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>

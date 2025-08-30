@@ -1,0 +1,639 @@
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: white;
+    padding: 5px 3%;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.logo img{
+    display: flex;
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 3%;
+    border: 0.5px solid black;
+}
+
+#home-page{
+    display: flex;
+    padding: 5px 3%;
+    margin-bottom: 15rem;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,        /* Gradien dari atas ke bawah */
+        #FFDF01 0%,        /* Mulai dengan kuning solid di paling atas */
+        #FFDF01 80%,       /* Kuning solid hingga 70% tinggi div */
+        rgba(255, 255, 0, 0) 100% /* Memudar ke transparan di 100% (bawah) */
+    );
+}
+
+.hero-text h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    
+}
+.hero-image{
+    position: relative; /* Penting untuk memposisikan gradien di atas gambar */
+    top: 12rem;
+    display: inline-block; /* Agar wadah menyesuaikan ukuran gambar */
+    max-width: 100%;
+    /* Atur warna latar belakang agar gambar memudar ke warna ini */
+    background-color:#FFDF01; 
+}
+
+.hero-image::after{
+    content: '';
+    position: absolute; /* Posisikan gradien di atas gambar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Membuat gradien yang memudar dari transparan ke putih */
+    background: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        transparent 60%, /* Transparan hingga 70% dari bawah */
+        white 100%      /* Pudar sepenuhnya menjadi putih di 100% */
+    );
+}
+.hero-image img{
+    width: 500px;
+    height: auto;
+   
+}
+
+#about-the-company{  
+    display: block;
+    align-content: center;
+    padding: 5px 3%;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 20%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 50%  /* Pudar jadi putih di bawah */
+    );
+}
+
+#about-the-company .section-title{
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+#about-the-company h2{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+#about-the-company .company-values{
+    display: flex;
+    justify-content: space-around;
+}
+#about-the-company .company-values h3{
+    margin-bottom: 0.6rem;
+    font-style: italic;
+    text-align: center;
+       
+}
+#about-the-company .company-values  .visi{
+    text-align: center;
+    align-content: center;
+    width: 40%;
+    line-height: 22px;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: 0.3px solid black;
+    box-shadow: 30px 16px 14px rgba(0, 0, 0, 0.1);
+}
+#about-the-company .company-values  .misi{
+    width: 40%;
+    line-height: 22px;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: 0.3px solid black;
+    box-shadow: 30px 32px 16px rgba(0, 0, 0, 0.1);
+}
+
+#HeadQuarter{
+    display: block;
+    align-content: center;
+    text-align: center;
+    padding: 5px 3%;
+    margin-bottom: 15rem;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 30%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 90%  /* Pudar jadi putih di bawah */
+    );
+
+}
+
+#HeadQuarter .section-title h2{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#HeadQuarter .HeadQuarter-places{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+#HeadQuarter .HeadQuarter-places img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 48px 32px 16px rgba(0, 0, 0, 0.1);
+}
+
+#Message-Us{
+    display: block;
+    align-content: center;
+    padding: 5px 3%;
+    height: 100vh;  
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 20%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 50%  /* Pudar jadi putih di bawah */
+    );
+}
+
+
+#Message-Us .section-title h2{
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#Message-Us .Message-Us-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+#messageForm {
+    display: grid;
+    /* Atur kolom untuk label, titik dua, dan input. */
+    /* 1fr untuk label, max-content untuk titik dua, dan 2fr untuk input. */
+    grid-template-columns: 1fr max-content 2fr;
+    gap: 20px; /* Jarak antar baris dan kolom. */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#messageForm label {
+    grid-column: 1 / 2; /* Letakkan label di kolom pertama. */
+    font-weight: bold;
+}
+
+#messageForm input[type="text"],
+#messageForm input[type="Date"],
+#messageForm textarea {
+    grid-column: 3 / 4; /* Letakkan input di kolom ketiga. */
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Penyesuaian untuk input radio dan labelnya. */
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    grid-column: 3 / 4;
+}
+.radio-group label {
+}
+
+/* Menambahkan titik dua menggunakan pseudo-element. */
+#messageForm label::after {
+    content: "";
+    display: block;
+    grid-column: 2 / 3; /* Posisikan titik dua di kolom kedua. */
+    text-align: center;
+}
+
+/* Mengatur input radio agar tetap di satu baris. */
+#messageForm input[type="radio"] {
+    grid-column: 3 / 4;
+}
+
+#messageForm button {
+    grid-column: 1 / 4; /* Tombol mengambil seluruh baris. */
+    padding: 8px;
+}
+
+
+#Message-Us .Message-Us-form #displayArea {
+    width: 45%;
+    flex-direction: column;
+    line-height: 1rem;
+    padding: 1rem;
+    word-wrap: break-word; 
+    border: 1px solid black;
+}
+
+#Message-Us .Message-Us-form #displayArea p{
+    text-align:left;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    display: flex;
+    border-top: 2px solid black;
+    background-color: white;
+    padding: 5px 3%;
+    align-items: center;
+    justify-content:right;
+    height: 60px;
+    font-family:"Montserrat" ;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header{
+    display: flex;
+    background-color: white;
+    padding: 2px 3%;
+    align-items: center;
+    justify-content:space-between;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    }
+
+    .logo img{
+    display: flex;
+    width: 75px;
+    height: auto;
+    align-items: center;
+}
+nav { 
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 3%;
+    border: 0.5px solid black;
+}
+
+#home-page{
+    display: flex;
+    padding: 5px 3%;
+    margin-bottom: 15rem;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,        /* Gradien dari atas ke bawah */
+        #FFDF01 0%,        /* Mulai dengan kuning solid di paling atas */
+        #FFDF01 80%,       /* Kuning solid hingga 70% tinggi div */
+        rgba(255, 255, 0, 0) 100% /* Memudar ke transparan di 100% (bawah) */
+    );
+}
+
+.hero-text h1{
+    font-size: 1,5rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    
+}
+.hero-image{
+    position: absolute;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+    display: inline-block; /* Agar wadah menyesuaikan ukuran gambar */
+    max-width: 100%;
+    /* Atur warna latar belakang agar gambar memudar ke warna ini */
+    background-color:#FFDF01; 
+}
+
+.hero-image::after{
+    content: '';
+    position: absolute; /* Posisikan gradien di atas gambar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Membuat gradien yang memudar dari transparan ke putih */
+    background: linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        transparent 60%, /* Transparan hingga 70% dari bawah */
+        white 100%      /* Pudar sepenuhnya menjadi putih di 100% */
+    );
+}
+.hero-image img{
+    width: 400px;
+    height: auto;
+    
+   
+}
+#about-the-company{  
+    display: block;
+    align-content: center;
+    padding: 5px 3%;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 20%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 50%  /* Pudar jadi putih di bawah */
+    );
+}
+
+#about-the-company .section-title{
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+#about-the-company h2{
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+#about-the-company p{
+    font-size: 0.5rem;
+    margin-bottom: 0.5 rem;
+    font-style: italic;
+    text-align: center;
+}
+#about-the-company .company-values{
+    display: block;
+    justify-content: space-around;
+}
+#about-the-company .company-values h3{
+    margin-bottom: 0.6rem;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8rem;
+       
+}
+#about-the-company .company-values  .visi{
+    text-align: center;
+    align-content: center;
+    width: 90%;
+    word-wrap: break-word;
+    height: 20vh;
+    line-height: 22px;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: 0.3px solid black;
+    box-shadow: 30px 16px 14px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+#about-the-company .company-values  .misi{
+    width: 90%;
+    word-wrap: break-word;
+    font-size: 0.5rem;
+    line-height: 22px;
+    padding: 1rem;
+    border-radius: 10px;
+    opacity: 0.9;
+    border: 0.3px solid black;
+    box-shadow: 30px 32px 16px rgba(0, 0, 0, 0.1);
+}
+
+#HeadQuarter{
+    display: block;
+    align-content: center;
+    text-align: center;
+    padding: 5px 3%;
+    margin-bottom: 15rem;
+    height: 100vh;
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 30%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 90%  /* Pudar jadi putih di bawah */
+    );
+
+}
+
+#HeadQuarter .section-title h2{
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#HeadQuarter .HeadQuarter-places{
+    display: block;
+    justify-content: space-around;
+    margin-top: 2rem;
+    
+}
+
+#HeadQuarter .HeadQuarter-places img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 48px 32px 16px rgba(0, 0, 0, 0.1);
+}
+
+#HeadQuarter .HeadQuarter-places h3{
+   margin-bottom: 2rem;
+}
+
+#Message-Us{
+    display: block;
+    align-content: center;
+    padding: 2px 3%;
+    height: 100vh;  
+    font-family:"Montserrat" ;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#FFDF01;
+    background: linear-gradient(
+        to bottom,
+         rgba(255, 255, 255, 0) 0%,   /* Pudar jadi putih di atas */
+        #FFDF01 20%,    /* Transparan di 20% */
+        rgba(255, 255, 255, 0) 100%,    /* Tetap transparan di tengah */
+        #FFDF01 50%  /* Pudar jadi putih di bawah */
+    );
+}
+
+
+#Message-Us .section-title h2{
+    font-size: 1rem;
+    font-style: italic;
+    text-align: center;
+}
+
+#Message-Us .Message-Us-form {
+    display: block;
+    margin-top: 3rem;
+}
+
+#messageForm {
+    display: grid;
+    /* Atur kolom untuk label, titik dua, dan input. */
+    /* 1fr untuk label, max-content untuk titik dua, dan 2fr untuk input. */
+    grid-template-columns: 1fr max-content 2fr;
+    gap: 20px; /* Jarak antar baris dan kolom. */
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#messageForm label {
+    grid-column: 1 / 2; /* Letakkan label di kolom pertama. */
+    font-weight: bold;
+}
+
+#messageForm input[type="text"],
+#messageForm input[type="Date"],
+#messageForm textarea {
+    grid-column: 3 / 4; /* Letakkan input di kolom ketiga. */
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Penyesuaian untuk input radio dan labelnya. */
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    grid-column: 3 / 4;
+}
+.radio-group label {
+}
+
+/* Menambahkan titik dua menggunakan pseudo-element. */
+#messageForm label::after {
+    content: "";
+    display: block;
+    grid-column: 2 / 3; /* Posisikan titik dua di kolom kedua. */
+    text-align: center;
+}
+
+/* Mengatur input radio agar tetap di satu baris. */
+#messageForm input[type="radio"] {
+    grid-column: 3 / 4;
+}
+
+#messageForm button {
+    grid-column: 1 / 4; /* Tombol mengambil seluruh baris. */
+    padding: 8px;
+}
+
+
+#Message-Us .Message-Us-form #displayArea {
+    width: 90%;
+    flex-direction: column;
+    line-height: 1rem;
+    padding: 1rem;
+    word-wrap: break-word; 
+    border: 1px solid black;
+}
+
+#Message-Us .Message-Us-form #displayArea p{
+    text-align:left;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+footer{
+    display: flex;
+    border-top: 2px solid black;
+    background-color: white;
+    padding: 5px 3%;
+    align-items: center;
+    justify-content:right;
+    height: 10vh;
+    font-family:"Montserrat" ;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+}
